@@ -69,9 +69,6 @@ var SONGS_MODAL_CONTROLLER = (function(UICtrl) {
     function populateData(data) {
         data.forEach(song => {
             source.getQS(DOM.holder).innerHTML += UICtrl.getSongComponent(song.cover, song.name, song.artist);
-            source.getQS(DOM.holder).innerHTML += UICtrl.getSongComponent(song.cover, song.name, song.artist);
-            source.getQS(DOM.holder).innerHTML += UICtrl.getSongComponent(song.cover, song.name, song.artist);
-            source.getQS(DOM.holder).innerHTML += UICtrl.getSongComponent(song.cover, song.name, song.artist);
         });
         setupEventListeners();
     }
