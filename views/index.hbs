@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Muzzk</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <script src="./js/api.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/songs.js"></script>
+    <script src="./js/footer.js"></script>
 </head>
-<body>
-    {{>header}}
+<body class="w3-white">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white nav">
+        <a href="#" class="w3-bar-item w3-animate-left w3-button w3-padding-large w3-white">
+            <i class="fa fa-globe w3-xlarge"></i>
+            <p>Discover</p>
+        </a>
+        <!-- <a href="" class="w3-bar-item w3-animate-left w3-button w3-padding-large w3-hover-grey">
+            <i class="fa fa-trophy w3-xlarge"></i>
+            <p>Top Picks</p>
+        </a> -->
+        <!-- <a href="" class="w3-bar-item w3-animate-left w3-button w3-padding-large w3-hover-grey">
+            <i class="fa fa-microphone w3-xlarge"></i>
+            <p>Artists</p>
+        </a> -->
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="" class="w3-bar-item w3-button" style="width:25% !important">
+                <i class="fa fa-globe w3-large"></i>
+                <br>
+                <p>Discover</p>
+            </a>
+            <!-- <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">
+                <i class="fa fa-trophy w3-large"></i>
+                <br>
+                <p>Top Picks</p>
+            </a> -->
+            <!-- <a href="" class="w3-bar-item w3-button" style="width:25% !important">
+                <i class="fa fa-microphone w3-large"></i>
+                <br>
+                <p>Artists</p>
+            </a> -->
+        </div>
+    </div>
+
+    <div id="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="w3-container">
+                <div class="w3-container w3-display-container w3-cell-row">
+                    <div class="w3-container w3-cell w3-mobile w3-animate-zoom">
+                        <h1><b>Muzzk</b></h1>
+                    </div>
+                    <div class="w3-container w3-display-right w3-display-container w3-cell w3-mobile search-bar">
+                        <i class="fa fa-search w3-xlarge search-icon"></i>
+                        <input type="text" class="search-input" name="" id="" placeholder="What's on your mind today?">
+                    </div>
+                </div>
+                <div class="w3-section w3-bottombar w3-padding-16">
+                    <h2 class="w3-margin-right">Songs:</h2>
+                    <!-- <button class="w3-button w3-animate-zoom w3-black">ALL</button>
+                    <button class="w3-button w3-animate-zoom w3-white">Hip Hop</button>
+                    <button class="w3-button w3-animate-zoom w3-white w3-hide-small">Rock</button>
+                    <button class="w3-button w3-animate-zoom w3-white w3-hide-small">Pop</button> -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Music Content -->
+        <div class="w3-row-padding" id="songs-holder"></div>
+
+        <div class="sticky player" style="visibility: hidden;">
+            {{!-- <div class="data"> --}}
+                <span class="meta-holder"><h3 id="name">Text</h3>, <h4 id="artist">text</h4></span>
+                {{!-- <span><h5 id="time">1:30</h5></span>
+            </div> --}}
+            <audio id="audio-player" controls></audio>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="w3-content w3-text-black">
+          <h2 class="w3-text-dark-grey">Contact Us</h2>
+          <hr style="width:200px" class="w3-opacity">
+
+          <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-dark-grey w3-xxlarge w3-margin-right"></i> Toronto, CA</p>
+            <p><i class="fa fa-phone fa-fw w3-text-dark-grey w3-xxlarge w3-margin-right"></i> Phone: 1 - 800 - 4MUZZK</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-dark-grey w3-xxlarge w3-margin-right"> </i> Email: support@muzzk.com</p>
+          </div>
+
+          <i class="fa fa-facebook-official w3-hover-opacity  w3-xlarge" id="anchorFacebook"></i>
+          <i class="fa fa-instagram w3-hover-opacity  w3-xlarge" id="anchorInstagram"></i>
+          <i class="fa fa-twitter w3-hover-opacity  w3-xlarge" id="anchorTwitter"></i>
+          <i class="fa fa-linkedin w3-hover-opacity  w3-xlarge" id="anchorLinkedIn"></i>
+        <!-- End footer -->
+        </footer>
+    </div>
+    
 </body>
 </html>

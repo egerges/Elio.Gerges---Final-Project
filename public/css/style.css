@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
+.w3-row-padding {
+    padding: 10px;
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px;
+    padding-left: 10px;
+    min-height: 50vh;
+}
+
+footer {
+    margin-bottom: 120px;
+}
+
+.w3-content {
+    min-width: 75%;
+}
+
+.nav {
+    border-right: 1px solid lightcoral;
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+}
+
+.player {
+    height: 100px;
+    min-width: 30vw;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-45%);
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.meta-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta-holder h4 {
+    margin-left: 5px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: lightgray;
+    border-color: lightgray;
+}
+
+.search-bar {
+    width: 50%;
+    height: 55%;
+    background-color: #FFFFFF;
+    border: 1px solid #757575;
+    border-radius: 10px;
+}
+
+.search-icon {
+    color: #757575;
+}
+
+.search-input {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 90%;
+    height: 100%;
+    padding: 7px;
+    outline: none;
+    border: none;
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .w3-container {
+        padding: .01em 5px;
+    }
+
+    .w3-display-right {
+        position: relative;
+        margin-top: 10px;
+    }
+}
