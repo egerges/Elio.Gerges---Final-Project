@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "uuid": 1,
+            "name": "ADELE",
+            "picture": "https://www.bworldonline.com/wp-content/uploads/2021/10/adele.jpg"
+        },
+        {
+            "uuid": 2,
+            "name": "ED SHEERAN",
+            "picture": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg"
+        },
+        {
+            "uuid": 3,
+            "name": "LIL NAS X",
+            "picture": "https://i.scdn.co/image/ab6761610000e5ebab6bd6e450cbc7629a9a2381"
+        },
+        {
+            "uuid": 4,
+            "name": "AUDIEN",
+            "picture": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5dc37fd2ca425400073c36c0%2FAudien%2F960x0.jpg%3Ffit%3Dscale"
+        },
+        {
+            "uuid": 5,
+            "name": "JAX",
+            "picture": "https://variety.com/wp-content/uploads/2021/06/jax.jpeg"
+        },
+        {
+            "uuid": 6,
+            "name": "JUSTIN BIEBER",
+            "picture": "https://ichef.bbci.co.uk/news/976/cpsprodpb/6B59/production/_113018472_getty_1.jpg"
+        }
+    ]
+}

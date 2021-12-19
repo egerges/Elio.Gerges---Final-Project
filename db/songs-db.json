@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "artist": 1,
+            "name": "EASY ON ME",
+            "album": "30",
+            "released": "2021",
+            "cover": "https://s3.amazonaws.com/media.thecrimson.com/photos/2021/10/18/210955_1352140.jpg"
+        },
+        {
+            "artist": 1,
+            "name": "SOMEONE LIKE YOU",
+            "album": "21",
+            "released": "2011",
+            "cover": "https://i1.sndcdn.com/artworks-000025514980-c6dl6t-t500x500.jpg"
+        },
+        {
+            "artist": 1,
+            "name": "WATER UNDER THE BRIDGE",
+            "album": "25",
+            "released": "2015",
+            "cover": "https://www.bworldonline.com/wp-content/uploads/2021/10/adele.jpg"
+        },
+        {
+            "artist": 2,
+            "name": "BAD HABITS",
+            "album": "=",
+            "released": "2021",
+            "cover": "https://i.redd.it/91rcg7q87t571.jpg"
+        },
+        {
+            "artist": 2,
+            "name": "CASTLE ON A HILL",
+            "album": "÷",
+            "released": "2017",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/2/27/Castle_On_The_Hill_%28Official_Single_Cover%29_by_Ed_Sheeran.png"
+        }
+    ]
+}
