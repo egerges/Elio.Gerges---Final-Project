@@ -30,6 +30,12 @@ try {
     // Web Middleware
     const web = require('./pages/web');
 
+    // Api Middleware
+    const api = require('./api/api');
+
+    // Serving the api
+    app.use('/api', api);
+
     // Serving the public html pages
     app.use('/', web);
 
