@@ -83,9 +83,41 @@ try {
 
     // Get songs by search
     router.get('/search', async (req, res) => {
-        res.status(200).send({
-            id: 15,
-            name: 'John',
+        var criteria = req.query.criteria.toUpperCase();
+        // Retrieving artists from table artists in db
+        readData(artistsString, (err, artists) => {
+            // If error, throw it
+            if (err) throw err;
+
+            // If no error, parse data to JSON
+            artists = JSON.parse(artists)["data"];
+
+            // Retrieving songs from table songs in db
+            readData(songsString, (err, songs) => {
+                // If error, throw it
+                if (err) throw err;
+
+                // If no error, parse data to JSON
+                songs = JSON.parse(songs)["data"];
+
+                //Manipulate data
+                var refactoredData = [];
+                songs.forEach(song => {
+                    artists.forEach(artist => {
+                        if(song["artist"] == artist["uuid"]) {
+                            song["artist"] = artist["name"];
+                        }
+                    });
+                    if(!criteria || song["name"].includes(criteria) || song["artist"].includes(criteria)) {
+                        refactoredData.push(song);
+                    }
+                });
+
+                // Send response with new Data
+                res.status(200).send({
+                    songs: refactoredData
+                });
+            });
         });
     });
 

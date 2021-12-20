@@ -8,7 +8,8 @@ const SONGS_UI_CONTROLLER = (function () {
         player: '.player',
         songName: '#name',
         artistName: '#artist',
-        audioPlayer: '#audio-player'
+        audioPlayer: '#audio-player',
+        searchBar: '#search-bar',
     };
 
     return {
@@ -90,6 +91,22 @@ var SONGS_MODAL_CONTROLLER = (function(UICtrl) {
                 source.getQS(DOM.audioPlayer).setAttribute('src', src);
                 source.getQS(DOM.audioPlayer).play();
             });
+        });
+
+        source.getQS(DOM.searchBar).addEventListener('input', (e) => {
+            var searchValue = e.target.value;
+            if(searchValue != " ") {
+                API_CONTROLLER.getSongsFrom(searchValue)
+                .then(response => response.json())
+                .then(result => {
+                    source.getQS(DOM.holder).innerHTML = '';
+                    populateData(result.songs);
+                    setupEventListeners();
+                })
+                .catch(err => {
+                    alert(err.message);
+                });
+            }
         });
     };
  

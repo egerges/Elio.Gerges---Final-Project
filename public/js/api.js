@@ -17,7 +17,14 @@ const API_CONTROLLER = (function () {
         return fetch(url, {method: 'GET', ...config});
     }
 
+    function getSongsFrom(criteria) {
+        var url = baseUrl + `search?criteria=${criteria}`;
+
+        return fetch(url, {method: 'GET', ...config});
+    }
+
     return {
-        getSongs
+        getSongs,
+        getSongsFrom
     };
 })();
