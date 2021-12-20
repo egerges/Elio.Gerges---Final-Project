@@ -10,6 +10,7 @@ const SONGS_UI_CONTROLLER = (function () {
         artistName: '#artist',
         audioPlayer: '#audio-player',
         searchBar: '#search-bar',
+        imgs: '.imgs'
     };
 
     return {
@@ -21,7 +22,7 @@ const SONGS_UI_CONTROLLER = (function () {
             return `
             <div class="w3-quarter w3-animate-opacity song" data-url="${artistName}/${songName}">
                 <div class="w3-display-container w3-opacity-min w3-hover-opacity-off" style="transition:0.5s;width:100%"  data-url="${artistName}/${songName}">
-                    <img src="${cover}" class="w3-round-xlarge" alt="${songName}" style="width:100%"  data-url="${artistName}/${songName}">
+                    <img src="${cover}" class="w3-round-xlarge imgs" alt="${songName}" data-url="${artistName}/${songName}">
                     <!-- <div class="w3-display-topleft w3-display-hover w3-large">
                     <button type="button" class="w3-white w3-animate-opacity w3-btn w3-margin w3-round" title="Save"><i class="fa fa-heart w3-text-red"></i></button>
                     </div> 
@@ -70,6 +71,10 @@ var SONGS_MODAL_CONTROLLER = (function(UICtrl) {
     function populateData(data) {
         data.forEach(song => {
             source.getQS(DOM.holder).innerHTML += UICtrl.getSongComponent(song.cover, song.name, song.artist);
+        });
+        source.getQSA(DOM.imgs)
+        .forEach(img => {
+            img.offsetHeight = img.offsetWidth;
         });
         setupEventListeners();
     }

@@ -15,7 +15,9 @@ h6 {
 }
 
 .w3-row-padding img {
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .w3-row-padding {
