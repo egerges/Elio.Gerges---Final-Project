@@ -34,6 +34,104 @@
             "album": "÷",
             "released": "2017",
             "cover": "https://upload.wikimedia.org/wikipedia/en/2/27/Castle_On_The_Hill_%28Official_Single_Cover%29_by_Ed_Sheeran.png"
+        },
+        {
+            "artist": 2,
+            "name": "I SEE FIRE",
+            "album": "The Hobbit: The Desolation of Smaug",
+            "released": "2013",
+            "cover": "https://www.cevirce.com/en/translate/wp-content/uploads/2021/03/ed-sheeran-i-see-fire-lyrics-1.jpg"
+        },
+        {
+            "artist": 2,
+            "name": "SHAPE OF YOU",
+            "album": "÷",
+            "released": "2017",
+            "cover": "https://i1.sndcdn.com/artworks-hHRNAPyoL1gTPNV7-mUwz9A-t500x500.jpg"
+        },
+        {
+            "artist": 2,
+            "name": "SHIVERS",
+            "album": "=",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/z2_Lrg6rRks/maxresdefault.jpg"
+        },
+        {
+            "artist": 5,
+            "name": "90s KIDS",
+            "album": "90s Kids",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/iMKcWsUjdzg/maxresdefault.jpg"
+        },
+        {
+            "artist": 5,
+            "name": "I FEEL LIKE A KID AGAIN",
+            "album": "I Feel Like A Kid Again",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/fA0Ub7cGyI8/maxresdefault.jpg"
+        },
+        {
+            "artist": 5,
+            "name": "LIKE MY FATHER",
+            "album": "Like My Father",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/GCWl50HQZIM/maxresdefault.jpg"
+        },
+        {
+            "artist": 4,
+            "name": "WISH IT WAS YOU",
+            "album": "Wish It Was You",
+            "released": "2021",
+            "cover": "https://i1.sndcdn.com/artworks-0ohvCFHCVZk8-0-t500x500.png"
+        },
+        {
+            "artist": 6,
+            "name": "GHOST",
+            "album": "Justice",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/KRUWn3dLoRg/maxresdefault.jpg"
+        },
+        {
+            "artist": 6,
+            "name": "HOLD ON",
+            "album": "Justice",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/PieWQ3X14KI/maxresdefault.jpg"
+        },
+        {
+            "artist": 6,
+            "name": "LIFETIME",
+            "album": "Justice",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/0O2QX2A_qZw/maxresdefault.jpg"
+        },
+        {
+            "artist": 3,
+            "name": "INDUSTRY BABY",
+            "album": "2021",
+            "released": "2021",
+            "cover": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F07%2Flil-nas-x-industry-baby-single-stream-000.jpg?w=960&cbr=1&q=90&fit=max"
+        },
+        {
+            "artist": 3,
+            "name": "MONTERO (CALL ME BY YOUR NAME)",
+            "album": "2021",
+            "released": "2021",
+            "cover": "https://depauliaonline.com/wp-content/uploads/2021/04/lil-nas-x-montero-900x474.jpg"
+        },
+        {
+            "artist": 3,
+            "name": "OLD TOWN ROAD",
+            "album": "7",
+            "released": "2019",
+            "cover": "https://media.gq.com/photos/5cdeef0e1f8a4e271cddab8d/16:9/w_1280,c_limit/Old-Town-Road-Video-GQ-2019-051719.jpg"
+        },
+        {
+            "artist": 3,
+            "name": "THATS WHAT I WANT",
+            "album": "2021",
+            "released": "2021",
+            "cover": "https://i.ytimg.com/vi/QDYDRA5JPLE/maxresdefault.jpg"
         }
     ]
 }
