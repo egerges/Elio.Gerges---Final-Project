@@ -32,13 +32,9 @@
         <!-- Music Content -->
         <div class="w3-row-padding" id="songs-holder"></div>
 
-        <div class="sticky player" style="visibility: hidden;">
-            {{!-- <div class="data"> --}}
-                <span class="meta-holder"><h3 id="name">Text</h3>, <h4 id="artist">text</h4></span>
-                {{!-- <span><h5 id="time">1:30</h5></span>
-            </div> --}}
-            <audio id="audio-player" controls></audio>
-        </div>
+        {{!-- Player template start --}}
+        {{>player}}
+        {{!-- Player template end --}}
     
         <!-- Footer -->
         <footer class="w3-content w3-text-black">
